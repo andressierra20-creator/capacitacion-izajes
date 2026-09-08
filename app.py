@@ -9,15 +9,6 @@ import time
 # Configuración de página
 st.set_page_config(page_title="Capacitación Grupo R.I. - Análisis de Accidente", page_icon="🚦", layout="wide")
 
-# Ocultar el menú superior (GitHub y opciones) para los participantes
-st.markdown("""
-    <style>
-    [data-testid="stToolbar"] {visibility: hidden !important; display: none !important;}
-    [data-testid="stHeader"] {visibility: hidden !important; display: none !important;}
-    #MainMenu {visibility: hidden !important; display: none !important;}
-    footer {visibility: hidden !important; display: none !important;}
-    </style>
-""", unsafe_allow_html=True)
 DATA_FILE = "respuestas.csv"
 COLUMNS_ORDER = ["timestamp", "nombre", "area", "secuencia", "controles", "causa_raiz", "que_haria", "calificacion"]
 
