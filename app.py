@@ -610,3 +610,9 @@ else:
     if auto_refresh:
         time.sleep(5)
         st.rerun()
+    # Auto-actualizar el panel cada 5 segundos
+    auto_refresh = st.sidebar.checkbox("Activar Auto-Actualización (En vivo)", value=True)
+    if auto_refresh:
+        import time
+        time.sleep(5)
+        st.rerun()
